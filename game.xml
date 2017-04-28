@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game>
+  <hero>
+    <name></name>
+    <atk>20</atk>
+    <armor>2</armor>
+    <hp>100</hp>
+    <cur>village</cur>
+    <bag>
+      <item num="4">wood</item>
+      <item num="0">stone</item>
+      <item num="0">leather</item>
+      <item num="0">gold</item>
+      <item num="0">diamond</item>
+      <tool on="0" num="0" dur="200" attr="atk" re="30" link="wood" linknum="3">woodSword</tool>
+      <tool on="0" num="0" dur="200" attr="atk" re="80" link="stone" linknum="3">stoneSword</tool>
+      <tool on="0" num="0" dur="200" attr="atk" re="100" link="gold" linknum="6">goldSword</tool>
+      <tool on="0" num="0" dur="200" attr="atk" re="200" link="diamond" linknum="8">diamondSword</tool>
+      <tool on="0" num="0" attr="armor" re="50" link="stone" linknum="5">chainArmor</tool>
+      <tool on="1" num="0" attr="armor" re="30" link="leather" linknum="5">leatherArmor</tool>
+      <tool on="0" num="0" attr="armor" re="80" link="gold" linknum="8">goldArmor</tool>
+      <tool on="0" num="0" attr="armor" re="200" link="diamond" linknum="10">diamondArmor</tool>
+      <food num="0" attr="hp" re="10">meat</food>
+      <food num="0" attr="hp" re="8">chicken</food>
+      <food num="0" attr="hp" re="5">apple</food>
+    </bag>
+  </hero>
+  <map>
+    <scene>
+      <name>village</name>
+      <intro>Sweet are the uses of adversity.</intro>
+      <block num="2" link="wood" linknum="4" luck="apple">tree</block>
+      <creature num="3" link="leather" linknum="2" luck="meat" atk="5" hp="20">sheep</creature>
+    </scene>
+    <scene>
+      <name>forest</name>
+      <intro>What light through yonder window breaks.</intro>
+      <block num="4" link="wood" linknum="4" luck="apple">tree</block>
+      <block num="3" link="stone" linknum="2" luck="diamond">rock</block>
+      <block num="1" link="gold" linknum="2" luck="diamond">goldore</block>
+      <creature num="2" link="meat" linknum="3" luck="diamond" atk="25" hp="60">zombie</creature>
+      <creature num="5" link="gold" linknum="3" luck="diamond" atk="10" hp="100">villager</creature>
+      <creature num="3" link="leather" linknum="2" luck="meat" atk="5" hp="20">sheep</creature>
+      <creature num="5" link="chicken" linknum="1" luck="chicken" atk="0" hp="10">chick</creature>
+    </scene>
+  </map>
+  <add>
+    <block num="1" link="wood" linknum="4" luck="apple">tree</block>
+    <block num="1" link="stone" linknum="2" luck="diamond">rock</block>
+    <block num="1" link="gold" linknum="2" luck="diamond">goldore</block>
+    <creature num="1" link="meat" linknum="3" luck="diamond" atk="25" hp="60">zombie</creature>
+    <creature num="1" link="gold" linknum="3" luck="diamond" atk="10" hp="100">villager</creature>
+    <creature num="1" link="leather" linknum="2" luck="meat" atk="5" hp="20">sheep</creature>
+    <creature num="1" link="chicken" linknum="1" luck="chicken" atk="0" hp="10">chick</creature>
+    <scene>
+      <name></name>
+      <intro>You created it, and you own it.</intro>
+    </scene>
+  </add>
+</game>
